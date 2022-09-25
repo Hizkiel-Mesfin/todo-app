@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: hsl(236, 33%, 92%);
+}
+
+.header {
+  height: 30rem;
+  background-image: url(../images/bg-desktop-dark.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main {
+  position: relative;
+  height: 100vh;
+  background-color: hsl(235, 21%, 11%);
+}
+
+.section-todo {
+  position: absolute;
+  top: -25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 3rem;
+  width: 50%;
+}
+
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  margin-bottom: 3rem;
+}
+
+.todo-heading {
+  font-size: 4rem;
+  letter-spacing: 15px;
+}
+
+.state-icon {
+  color: #000;
+}
+
+.to-be-dragged {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: hsl(235, 24%, 19%);
+  margin-bottom: 3rem;
+  padding: 2rem 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.user-input {
+  padding-left: 2rem;
+  border: none;
+  background-color: hsl(235, 24%, 19%);
+  width: 90%;
+}
+
+.user-input::placeholder {
+  font-size: 1.8rem;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+
+input[type="text"] {
+  color: hsl(236, 33%, 92%);
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+
+.user-input:focus {
+  outline: none;
+}
+
+.todo-list {
+  background-color: hsl(235, 24%, 19%);
+  list-style: none;
+  margin-bottom: 5rem;
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+.list-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid hsl(234, 11%, 52%);
+  padding: 2rem 1.5rem;
+  cursor: pointer;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.radio {
+  border: 1px solid hsl(234, 11%, 52%);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.radio:hover {
+  border: 2px solid hsl(220, 98%, 61%);
+  cursor: pointer;
+}
+
+.fa-circle-check {
+  color: hsl(220, 98%, 61%);
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.close {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: hsl(234, 11%, 52%);
+  cursor: pointer;
+  display: block;
+}
+
+.foot {
+  font-size: 1.4rem;
+  color: hsl(234, 11%, 52%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1.5rem;
+}
+
+.middle {
+  display: flex;
+  gap: 1rem;
+}
+
+.foot-items:hover {
+  color: hsl(236, 33%, 92%);
+  cursor: pointer;
+}
+
+.info {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}

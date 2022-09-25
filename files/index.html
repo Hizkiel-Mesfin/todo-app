@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/66b6a767f5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body>
+    <header class="header"></header>
+    <main class="main">
+      <section class="section-todo">
+        <div class="todo-header">
+          <h1 class="todo-heading">TODO</h1>
+          <img class="state-icon" src="../images/icon-sun.svg" alt="" />
+        </div>
+
+        <div class="to-be-dragged">
+          <span class="radio">
+            <i class="fa-solid"></i>
+          </span>
+
+          <input
+            class="user-input"
+            type="text"
+            value=""
+            placeholder="Create a new todo..."
+          />
+        </div>
+
+        <!-- List -->
+        <ul class="todo-list">
+          <li class="list-items">
+            <div class="left">
+              <span class="radio">
+                <i class="fa-solid"></i>
+              </span>
+              <p class="todo">Complete online Javascript course</p>
+            </div>
+            <span class="close"
+              ><i class="fa-sharp fa-solid fa-xmark"></i
+            ></span>
+          </li>
+
+          <li class="list-items">
+            <div class="left">
+              <span class="radio">
+                <i class="fa-solid"></i>
+              </span>
+
+              <p class="todo">Jog arounf the park 3x</p>
+            </div>
+            <span class="close"
+              ><i class="fa-sharp fa-solid fa-xmark"></i
+            ></span>
+          </li>
+
+          <li class="list-items">
+            <div class="left">
+              <span class="radio">
+                <i class="fa-solid"></i>
+              </span>
+
+              <p class="todo">10 minutes meditation</p>
+            </div>
+            <span class="close"
+              ><i class="fa-sharp fa-solid fa-xmark"></i
+            ></span>
+          </li>
+
+          <li class="list-items">
+            <div class="left">
+              <span class="radio">
+                <i class="fa-solid"></i>
+              </span>
+
+              <p class="todo">Read for one hour</p>
+            </div>
+            <span class="close"
+              ><i class="fa-sharp fa-solid fa-xmark"></i
+            ></span>
+          </li>
+
+          <li class="list-items">
+            <div class="left">
+              <span class="radio">
+                <i class="fa-solid"></i>
+              </span>
+
+              <p class="todo">Pick up groceries</p>
+            </div>
+            <span class="close"
+              ><i class="fa-sharp fa-solid fa-xmark"></i
+            ></span>
+          </li>
+
+          <li class="list-items">
+            <div class="left">
+              <span class="radio">
+                <i class="fa-solid"></i>
+              </span>
+
+              <p class="todo">Complete the challenge on Frontend Mentor</p>
+            </div>
+            <span class="close"
+              ><i class="fa-sharp fa-solid fa-xmark"></i
+            ></span>
+          </li>
+          <li class="foot">
+            <p class="foot-items count"></p>
+            <div class="middle">
+              <p class="foot-items all">All</p>
+              <p class="foot-items active">Active</p>
+              <p class="foot-items completed">Completed</p>
+            </div>
+            <p class="foot-items clear">Clear Completed</p>
+          </li>
+        </ul>
+        <p class="info">Drag and drop to record list</p>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
